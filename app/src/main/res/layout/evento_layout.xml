@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:elevation="6dp"
+    android:background="?android:attr/windowBackground"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/textViewLocal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="Local: Cidade/Bairro"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingEnd="8dp"
+            tools:text="Local: Cidade/Bairro" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDelete"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_delete_24"
+            android:elevation="6dp"
+            android:contentDescription="Botão para excluir evento"
+            android:layout_marginStart="8dp"
+            app:tint="@android:color/darker_gray" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTipoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="4dp"
+        tools:text="Tipo: Chuva intensa" />
+
+    <TextView
+        android:id="@+id/textViewGrauImpacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="4dp"
+        tools:text="Impacto: Severo" />
+
+    <TextView
+        android:id="@+id/textViewDataEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="4dp"
+        tools:text="Data: DD/MM/AAAA" />
+
+    <TextView
+        android:id="@+id/textViewPessoasAfetadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="4dp"
+        android:paddingBottom="4dp"
+        tools:text="Pessoas Afetadas: 1000" />
+
+</LinearLayout>

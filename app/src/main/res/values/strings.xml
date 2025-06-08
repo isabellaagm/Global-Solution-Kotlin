@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">gs-android</string>
+    <string name="tipo_evento_text">Tipo do Evento</string>
+    <string name="impacto_text">Grau de Impacto</string>
+
+    <string-array name="tipos_evento">
+        <item>Chuva intensa</item>
+        <item>Seca</item>
+        <item>Onda de calor</item>
+        <item>Tempestade</item>
+        <item>Deslizamento</item>
+    </string-array>
+
+    <string-array name="graus_impacto">
+        <item>Leve</item>
+        <item>Moderado</item>
+        <item>Severo</item>
+    </string-array>
+
+</resources>

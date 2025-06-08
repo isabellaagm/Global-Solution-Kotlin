@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/azul_claro"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Eventos Extremos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"/>
+
+    <EditText
+        android:id="@+id/editTextLocal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome do local (cidade/bairro)"
+        android:inputType="textCapWords"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginHorizontal="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerTipoEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:spinnerMode="dropdown"/>
+
+    <Spinner
+        android:id="@+id/spinnerGrauImpacto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/editTextDataEvento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Data do evento (DD/MM/AAAA)"
+        android:inputType="date"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginHorizontal="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPessoasAfetadas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número estimado de pessoas afetadas"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginHorizontal="16dp"/>
+
+    <Button
+        android:id="@+id/buttonIncluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incluir"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_blue"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="24dp"
+        android:elevation="6dp"
+        android:background="@drawable/rounded_blue"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/evento_layout"/>
+</LinearLayout>

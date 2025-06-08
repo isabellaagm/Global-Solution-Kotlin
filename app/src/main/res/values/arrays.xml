@@ -1,0 +1,21 @@
+<resources>
+    <string-array name="tipos_evento_array">
+        <item>Selecione o tipo de evento</item>
+        <item>Chuva intensa</item>
+        <item>Seca</item>
+        <item>Onda de calor</item>
+        <item>Ciclone</item>
+        <item>Inundação</item>
+        <item>Vendaval</item>
+        <item>Tempestade</item>
+        <item>Deslizamento</item>
+        <item>Outro</item>
+    </string-array>
+    <string-array name="graus_impacto_array">
+        <item>Selecione o grau de impacto</item>
+        <item>Leve</item>
+        <item>Moderado</item>
+        <item>Severo</item>
+    </string-array>
+</resources>
+
