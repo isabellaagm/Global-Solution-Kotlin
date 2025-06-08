@@ -4,8 +4,8 @@
 
 ## Participantes:
 
-- [Ana Luiza de Paula Reis] - RM552353
-- [Isabella Gomes Menezes] - RM552327
+- Ana Luiza de Paula Reis - RM552353
+- Isabella Gomes Menezes - RM552327
 
 **Favor substituir os placeholders acima com os nomes e RMs dos participantes.**
 
