@@ -21,6 +21,9 @@
 - **Funcionalidade Bônus:** Ordenação dos eventos extremos por data na listagem do RecyclerView.
 
 ## Evidências
-[principal](images/principal.png)
+![principal](images/principal.png)
+![itemExcluido](images/itemExcluido.png)
+![menuAberto](images/menuAberto.png)
+![telaAlunas](images/telaAlunas.png)
 
 
